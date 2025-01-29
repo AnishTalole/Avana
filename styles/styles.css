@@ -1,0 +1,639 @@
+/* Global Styles */
+:root {
+    --primary-color: #D94F87;
+    --top-bar: #32252C;
+    --dark-bg: #2D2D2D;
+    --white: #ffffff;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Top Bar */
+.topbar {
+    background-color: var(--top-bar);
+    color: var(--white);
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+.social-icons .social-icon {
+    color: var(--white);
+    margin-left: 15px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icons .social-icon:hover {
+    color: var(--primary-color);
+}
+
+/* Navigation */
+.navbar {
+    background-color: var(--white);
+    padding: 15px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+}
+
+.nav-link {
+    color: var(--dark-bg) !important;
+    font-weight: 500;
+    padding: 0 15px !important;
+}
+
+.nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+.btn-appointment {
+    background-color: var(--dark-bg);
+    color: var(--white);
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-appointment:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('/assets/img/hero-img.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: var(--white);
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.min-vh-80 {
+    min-height: 80vh;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.btn-learn-more {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 12px 30px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-learn-more:hover {
+    background-color: var(--dark-bg);
+    color: var(--white);
+}
+
+/* .play-button {
+    width: 80px;
+    height: 80px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    transition: transform 0.3s;
+}
+
+.play-button i {
+    color: var(--white);
+    font-size: 24px;
+}
+
+.play-button:hover {
+    transform: scale(1.1);
+} */
+
+/* Responsive Styles */
+/* Mobile View Styling */
+@media (max-width: 768px) {
+    /* Topbar */
+    .topbar {
+        text-align: center;
+        padding: 5px 0;
+    }
+
+    .topbar span {
+        display: block;
+        font-size: 12px;
+    }
+
+    .social-icons {
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    /* Navbar */
+    .navbar {
+        padding: 10px 0;
+    }
+
+    .navbar-toggler {
+        border: none;
+    }
+
+    .navbar-toggler-icon {
+        font-size: 1.2rem;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .nav-link {
+        padding: 10px 0 !important;
+        font-size: 14px;
+    }
+
+    .btn-appointment {
+        display: block;
+        width: 100%;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    /* Hero Section */
+    .hero {
+        min-height: 60vh;
+        text-align: center;
+        padding: 30px 15px;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    .btn-learn-more {
+        width: 100%;
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    .play-button {
+        width: 60px;
+        height: 60px;
+    }
+
+    .play-button i {
+        font-size: 20px;
+    }
+
+    #mobile-topbar span:nth-child(3) {
+        display: none;
+    }
+
+    #mobile-topbar{
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+
+
+/* Senior Care Section Styles */
+.senior-care-section {
+    padding: 80px 0;
+}
+
+.senior-care-section .image-container {
+    position: relative;
+    border-right: 3px solid #D94F87;
+    padding-right: 20px;
+}
+
+.senior-care-section .play-button {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: #D94F87;
+    border: none;
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.senior-care-section .play-button i {
+    color: white;
+    font-size: 20px;
+}
+
+.senior-care-section .play-button:hover {
+    transform: scale(1.1);
+}
+
+.senior-care-section .welcome-text {
+    color: #666;
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.senior-care-section .main-heading {
+    font-size: 2.5rem;
+    color: #2D2D2D;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.senior-care-section .description {
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.senior-care-section .feature-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.senior-care-section .feature-list li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 15px;
+    color: #2D2D2D;
+}
+
+.senior-care-section .feature-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #D94F87;
+    font-weight: bold;
+}
+
+.senior-care-section .contact-card {
+    background-color: #D94F87;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+}
+
+.senior-care-section .phone-icon {
+    width: 60px;
+    height: 60px;
+    background-color: #2D2D2D;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+.senior-care-section .phone-icon i {
+    font-size: 24px;
+}
+
+.senior-care-section .contact-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.senior-care-section .phone-number {
+    background-color: white;
+    color: #2D2D2D;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    display: inline-block;
+}
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+    .senior-care-section .image-container {
+        border-right: none;
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+    
+    .senior-care-section .main-heading {
+        font-size: 2rem;
+    }
+    
+    .senior-care-section .content-wrapper {
+        padding-left: 0 !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .senior-care-section .main-heading {
+        font-size: 1.75rem;
+    }
+    
+    .senior-care-section .contact-card {
+        padding: 20px;
+    }
+    
+    .senior-care-section .phone-number {
+        font-size: 1.1rem;
+    }
+}
+
+
+
+
+/* Services Section Styles */
+.services-section .service-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+
+.services-section .card-accent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    background: #D94F87;
+    border-radius: 0 0 80px 0;
+    opacity: 0.1;
+}
+
+.services-section .service-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.services-section .service-card h3 {
+    color: #2D2D2D;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.services-section .service-card p {
+    color: #666;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Types of Care Section Styles */
+.services-section .care-types-section {
+    padding: 50px 0;
+}
+
+.services-section .section-subtitle {
+    color: #666;
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.services-section .section-title {
+    color: #2D2D2D;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.services-section .care-slider {
+    padding: 0 50px;
+}
+
+.services-section .care-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.services-section .care-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.services-section .care-image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.services-section .slide-number {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 2rem;
+    color: white;
+    font-weight: 700;
+    opacity: 0.8;
+}
+
+.services-section .care-content {
+    padding: 25px;
+    text-align: left;
+}
+
+.services-section .care-content h3 {
+    color: #2D2D2D;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.services-section .care-content p {
+    color: #666;
+    margin: 0;
+}
+
+/* Slider Navigation */
+.services-section .slider-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: #D94F87;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.services-section .slider-nav:hover {
+    background: #2D2D2D;
+}
+
+.services-section .slider-nav.prev {
+    left: 0;
+}
+
+.services-section .slider-nav.next {
+    right: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    /* Service Cards */
+    .services-section .service-card {
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    .services-section .service-icon {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 15px;
+    }
+
+    .services-section .service-card h3 {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+
+    .services-section .service-card p {
+        font-size: 0.9rem;
+    }
+
+    /* Types of Care Section */
+    .services-section .care-types-section {
+        padding: 30px 15px;
+    }
+
+    .services-section .section-title {
+        font-size: 1.75rem;
+    }
+
+    .services-section .care-slider {
+        padding: 0 20px;
+    }
+
+    .services-section .care-image img {
+        height: 200px;
+    }
+
+    /* Slider Navigation */
+    .services-section .slider-nav {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+
+    .services-section .slider-nav i {
+        font-size: 18px;
+    }
+
+    /* Care Cards */
+    .services-section .care-card {
+        margin-bottom: 20px;
+    }
+
+    .services-section .care-content h3 {
+        font-size: 1.2rem;
+        margin-bottom: 8px;
+    }
+
+    .services-section .care-content p {
+        font-size: 0.9rem;
+    }
+
+    /* Mobile Specific Adjustments */
+    .services-section .swiper-slide {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .services-section .slide-number {
+        font-size: 1.5rem;
+        bottom: 10px;
+        right: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    /* Service Cards */
+    .services-section .service-card {
+        padding: 10px;
+    }
+
+    .services-section .service-icon {
+        width: 45px;
+        height: 45px;
+    }
+
+    .services-section .service-card h3 {
+        font-size: 1rem;
+    }
+
+    .services-section .service-card p {
+        font-size: 0.85rem;
+    }
+
+    .services-section .section-title {
+        font-size: 1.5rem;
+    }
+
+    .services-section .care-image img {
+        height: 180px;
+    }
+
+    .services-section .slider-nav {
+        width: 30px;
+        height: 30px;
+    }
+
+    .services-section .slider-nav i {
+        font-size: 16px;
+    }
+
+    .services-section .swiper-slide {
+        margin-bottom: 20px;
+    }
+}
